@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 16</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<h2 class="header__title">Forms</h2>
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<form action="#" class="page__form form-practice" enctype="multipart/form-data" method="get">
+					<div class="form-practice__line">
+						<label class="form-practice__label" for="name-01">Enter your name*</label>
+						<input class="form-practice__input" type="text" id="name-01" name="name-practice"
+							placeholder="Enter name" required autocomplete="off">
+					</div>
+					<div class="form-practice__line">
+						<label class="form-practice__label" for="mail-01">Enter your email*</label>
+						<input class="form-practice__input" type="email" id="mail-01" name="mail-practice"
+							placeholder="Enter email" required autocomplete="off">
+					</div>
+					<div class="form-practice__line">
+						<input class="form-practice__input" name="token" value="rythgfdf56" type="hidden">
+					</div>
+					<div class="form-practice__line">
+						<label class="form-practice__label" for="pass-01">Enter your password*</label>
+						<input class="form-practice__input" type="password" id="pass-01" name="password"
+							placeholder="Enter password" required autocomplete="off">
+					</div>
+					<div class="form-practice__line">
+						<label class="form-practice__label" for="age-01">Enter your age*</label>
+						<input class="form-practice__input" type="text" id="age-01" name="age-practice"
+							placeholder="Enter age" required>
+					</div>
+					<div class="form-practice__line">
+						<label class="form-practice__label" for="date-01">Enter your birshday date*</label>
+						<input class="form-practice__input" type="date" id="date-01" name="date-practice" required
+							autocomplete="off">
+					</div>
+					<div class="form-practice__line">
+						<label class="form-practice__label" for="tel-01">Enter your phone number*</label>
+						<input class="form-practice__input" type="tel" id="tel-01" name="tel-practice"
+							placeholder="Enter phone" required autocomplete="off">
+					</div>
+					<div class="form-practice__line">
+						<label class="form-practice__label" for="number-01">Enter your favourite number</label>
+						<input class="form-practice__input" type="number" id="number-01" name="number-practice"
+							placeholder="Enter number" autocomplete="off">
+					</div>
+					<div class="form-practice__line">
+						<label class="form-practice__label" for="color-01">Enter your favourite color</label>
+						<input class="form-practice__input" value="#ffffff" type="color" id="color-01" name="color-practice"
+							autocomplete="off">
+					</div>
+					<div class="form-practice__line">
+						<label class="form-practice__label" for="search-01">Enter your search</label>
+						<input class="form-practice__input" type="search" id="search-01" name="tel-practice"
+							placeholder="Enter search" autocomplete="off">
+					</div>
+					<div class="form-practice__line">
+						<label class="form-practice__label" for="range-01">Select your value</label>
+						<input class="form-practice__input" type="range" id="range-01" name="range-practice"
+							autocomplete="off">
+					</div>
+					<div class="form-practice__line form-practice__line--list">
+						<label for="list-01">Select your country:</label>
+						<select name="country" id="list-01">
+							<option selected value="null">Null</option>
+							<option value="Ukraine">Ukraine</option>
+							<option value="Great Britain">Great Britain</option>
+							<option value="Germany">Germany</option>
+							<option value="USA">USA</option>
+							<option value="Italy">Italy</option>
+						</select>
+					</div>
+					<div class="form-practice__line">
+						<label class="form-practice__label" for="file-01">Add files</label>
+						<input class="form-practice__input form-practice__input--add" multiple type="file" id="file-01"
+							name="file-practice">
+					</div>
+					<div class="form-practice__line">
+						<label class="form-practice__label" for="area-01">Write about yourself, please</label>
+						<textarea class="form-practice__area" name="message" id="area-01" autocomplete="off"></textarea>
+					</div>
+					<div class="form-practice__line checkbox">
+						<input class="checkbox__input" type="checkbox" id="car-01" name="car">
+						<label class="checkbox__label" for="car-01"><span class="checkbox__text">Have a
+								car?</span></label>
+					</div>
+					<div class="form-practice__line checkbox">
+						<input class="checkbox__input" checked type="checkbox" id="home-01" name="car">
+						<label class="checkbox__label" for="home-01"><span class="checkbox__text">Have a
+								home?</span></label>
+					</div>
+					<div class="form-practice__line checkbox">
+						<input class="checkbox__input" type="checkbox" id="bicycle-01" name="car">
+						<label class="checkbox__label" for="bicycle-01"><span class="checkbox__text">Have a
+								bicycle?</span></label>
+					</div>
+					<div class="form-practice__line radio">
+						<h2 class="radio__title">Do you have a pet?</h2>
+						<input class="radio__input" type="radio" id="yes-01" value="yes" name="pet">
+						<label class="radio__label" for="yes-01"><span class="radio__text">Yes</span></label>
+					</div>
+					<div class="form-practice__line radio">
+						<input class="radio__input" type="radio" id="no-01" value="no" name="pet">
+						<label class="radio__label" for="no-01"><span class="radio__text">No</span></label>
+					</div>
+					<div class="form-practice__line actions">
+						<button class="actions__button" type="reset">Clean form</button>
+						<button class="actions__button" type="submit">Submit</button>
+					</div>
+				</form>
+			</div>
+			<section class="page__homework homework">
+				<div class="homework__container">
+					<div class="homework__picture">
+						<img class="homework__img" src="img/illustration.svg" alt="illustration">
+					</div>
+					<div class="homework__title">
+						<div class="homework__block block">
+							<h6 class="block__title">Any questions?</h6>
+							<h1 class="block__subtitle">Drop us a line</h1>
+						</div>
+
+						<form action="https://jsonplaceholder.typicode.com/posts" method="post" class="homework__forms forms">
+							<div class="forms__row">
+								<div class="forms__line">
+									<label class="forms__label" for="first-name">First Name*</label>
+									<input class="forms__input" id="first-name" type="text" required name="first-name"
+										placeholder="Your first name" autocomplete="off">
+								</div>
+								<div class="forms__line">
+									<label class="forms__label" for="last-name">Last Name*</label>
+									<input class="forms__input" id="last-name" type="text" required name="last-name"
+										placeholder="Your last name" autocomplete="off">
+								</div>
+							</div>
+							<div class="forms__row">
+								<div class="forms__line">
+									<label class="forms__label" for="email">Email*</label>
+									<input class="forms__input" id="email" type="email" required name="email"
+										placeholder="Your working email" autocomplete="off">
+								</div>
+								<div class="forms__line">
+									<label class="forms__label" for="phone">Phone</label>
+									<input class="forms__input" id="phone" type="tel" name="phone"
+										placeholder="Your phone number" autocomplete="off">
+								</div>
+							</div>
+							<div class="forms__line forms__line--area">
+								<label class="forms__label" for="message">Message*</label>
+								<textarea class="forms__textarea" name="message" id="message" required autocomplete="off"
+									placeholder="Your message"></textarea>
+							</div>
+							<div class="forms__row forms__row--gap">
+								<div class="forms__line checkbox-forms">
+									<input class="checkbox-forms__input" value="yes" type="checkbox" required name="agree"
+										id="agree">
+									<label class="checkbox-forms__label" for="agree"><span class="checkbox-forms__span">I
+											agree
+											to
+											receive communications from Createx
+											Online School</span></label>
+								</div>
+								<div class="forms__line">
+									<button class="forms__button" type="submit"><span>Send message</span></button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>
